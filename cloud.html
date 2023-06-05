@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F/GO Team Builder</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <script type="module" src="src/firebase.js"></script>
+  <script type="module" src="src/web-component-4.js"></script>
+  <script type="module" src="src/web-component-2.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav-bar data-page="cloud"></nav-bar>
+  <section class="section has-background-primary">
+    <div id="toolSearch" class="hero-body">
+      <button type="button" id="cloudbtn" class="button is-link">Load Some Teams from Cloud</button>
+    </div>
+    <div id="cloudteams" >
+      <h1 class="subtitle">There are no cloud teams loaded yet!</h1>
+    </div>
+  </section>
+</body>
+
+</html>

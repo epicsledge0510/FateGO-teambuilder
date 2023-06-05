@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F/GO Team Builder</title>
+  <script type="module" src="src/main.js"></script>
+  <script type="module" src="src/web-component-1.js"></script>
+  <script type="module" src="src/web-component-2.js"></script>
+  <script type="module" src="src/web-component-3.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav-bar data-page="app"></nav-bar>
+  <div id="toolSearch" class="hero-body">
+    <input id="searchterm" type="text" size="20" maxlength="20" autofocus value="" placeholder="ex. Altria"
+      class="input is-link" />
+      <button type="button" id="search" class="button is-link">Search characters</button>
+      <select id="resultSelect" class="select is-link">
+        <option value="any">Any Class</option>
+        <option value="shielder">Shielder</option>
+        <option value="saber">Saber</option>
+        <option value="archer">Archer</option>
+        <option value="lancer">Lancer</option>
+        <option value="rider">Rider</option>
+        <option value="caster">Caster</option>
+        <option value="assassin">Assassin</option>
+        <option value="berserker">Berserker</option>
+        <option value="ruler">Ruler</option>
+        <option value="avenger">Avenger</option>
+        <option value="alterEgo">Alter Ego</option>
+        <option value="moonCancer">Moon Cancer</option>
+        <option value="foreigner">Foreigner</option>
+        <option value="pretender">Pretender</option>
+      </select>
+      <button type="button" id="searchCE" class="button is-link">Search essences</button>
+      <select id="resultAmount" class="select is-link">
+        <option value="1000000000">Any Amount</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+      </select>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div id="results" class="columns">
+        <h1 class="subtitle">No search results yet!</h1>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
